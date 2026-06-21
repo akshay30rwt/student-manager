@@ -1,14 +1,9 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "Akshay",
-      "age": 22
-    },
-    {
       "id": 2,
-      "name": "Aman",
-      "age": 22
+      "name": "Raj Kumar",
+      "age": 26
     },
     {
       "id": 3,
@@ -24,6 +19,11 @@
       "id": 5,
       "name": "Sumit",
       "age": 21
+    },
+    {
+      "id": 6,
+      "name": "Rajat",
+      "age": 22
     }
   ]
 }

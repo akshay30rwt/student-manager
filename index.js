@@ -1,5 +1,11 @@
-const math = require('./math');
+const fs = require('fs');
 
-// console.log(math.add(10, 5));
-// console.log(math.subtract(10, 5));
-console.log(math.multiply(10, 5));
+const fileContent = fs.readFileSync('./data.json', 'utf-8');
+
+let jsonObject = JSON.parse(fileContent);
+
+jsonObject.students.push({ id: 2, name: "Rahul", age: 22 });
+
+
+fs.writeFileSync('./data.json', JSON.stringify(jsonObject, null, 2));
+console.log('Data written successfully');

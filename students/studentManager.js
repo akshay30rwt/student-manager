@@ -13,8 +13,13 @@ function writeData(data) {
 
 function addStudent(name, age) {
     const data = readData();
+
+    const maxId = data.students.length > 0
+        ? Math.max(...data.students.map(student => student.id))
+        : 0;
+
     const newStudent = {
-        id: data.students.length + 1, 
+        id: maxId + 1, 
         name: name,
         age: age
     }

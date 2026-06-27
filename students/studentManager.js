@@ -16,7 +16,7 @@ function addStudent(name, age) {
 
     const maxId = data.students.length > 0
         ? Math.max(...data.students.map(student => student.id))
-        : 0;
+        : 0
 
     const newStudent = {
         id: maxId + 1, 
